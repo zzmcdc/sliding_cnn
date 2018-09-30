@@ -1,0 +1,13 @@
+batch_size: 16
+name:   chinese
+charset:   label.txt
+num_label:  40
+num_epoch: 200
+train_lst: train.txt
+val_lst: val.txt
+imgW: 512
+imgH: 32
+gpu: true
+from_epoch: 0
+learning_rate: 0.1
+seq_len: 60
