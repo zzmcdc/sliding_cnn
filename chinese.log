@@ -1,34 +1,64 @@
 begin fit
-Epoch[0] Batch [0-10]	Speed: 80.71 samples/sec	loss=nan
-Epoch[0] Batch [10-20]	Speed: 81.37 samples/sec	loss=nan
-Epoch[0] Batch [20-30]	Speed: 81.34 samples/sec	loss=nan
-Epoch[0] Batch [30-40]	Speed: 80.93 samples/sec	loss=nan
-Epoch[0] Batch [40-50]	Speed: 81.21 samples/sec	loss=nan
-Epoch[0] Batch [50-60]	Speed: 81.45 samples/sec	loss=nan
-Epoch[0] Batch [60-70]	Speed: 81.19 samples/sec	loss=nan
-Epoch[0] Batch [70-80]	Speed: 81.36 samples/sec	loss=nan
-Epoch[0] Batch [80-90]	Speed: 81.30 samples/sec	loss=nan
-Epoch[0] Batch [90-100]	Speed: 81.24 samples/sec	loss=nan
-Epoch[0] Batch [100-110]	Speed: 81.09 samples/sec	loss=nan
-Epoch[0] Batch [110-120]	Speed: 81.24 samples/sec	loss=nan
-Epoch[0] Batch [120-130]	Speed: 81.35 samples/sec	loss=nan
-Epoch[0] Batch [130-140]	Speed: 81.49 samples/sec	loss=nan
-Epoch[0] Batch [140-150]	Speed: 81.44 samples/sec	loss=nan
-Epoch[0] Batch [150-160]	Speed: 81.58 samples/sec	loss=nan
-Epoch[0] Batch [160-170]	Speed: 81.09 samples/sec	loss=nan
-Epoch[0] Batch [170-180]	Speed: 81.08 samples/sec	loss=nan
-Epoch[0] Batch [180-190]	Speed: 81.15 samples/sec	loss=nan
-Epoch[0] Batch [190-200]	Speed: 81.21 samples/sec	loss=nan
-Epoch[0] Batch [200-210]	Speed: 81.64 samples/sec	loss=nan
-Epoch[0] Batch [210-220]	Speed: 80.89 samples/sec	loss=nan
-Epoch[0] Batch [220-230]	Speed: 81.37 samples/sec	loss=nan
-Epoch[0] Batch [230-240]	Speed: 81.51 samples/sec	loss=nan
-Epoch[0] Batch [240-250]	Speed: 80.83 samples/sec	loss=nan
-Epoch[0] Batch [250-260]	Speed: 80.40 samples/sec	loss=nan
-Epoch[0] Batch [260-270]	Speed: 81.30 samples/sec	loss=nan
-Epoch[0] Batch [270-280]	Speed: 81.23 samples/sec	loss=nan
-Epoch[0] Batch [280-290]	Speed: 81.48 samples/sec	loss=nan
-Epoch[0] Batch [290-300]	Speed: 81.00 samples/sec	loss=nan
-Epoch[0] Batch [300-310]	Speed: 81.34 samples/sec	loss=nan
-Epoch[0] Batch [310-320]	Speed: 81.07 samples/sec	loss=nan
-Epoch[0] Batch [320-330]	Speed: 81.05 samples/sec	loss=nan
+Epoch[0] Batch [0-100]	Speed: 63.86 samples/sec	loss=8.561363	edit_distance=1.447401
+Epoch[0] Batch [100-200]	Speed: 63.88 samples/sec	loss=7.011438	edit_distance=0.896771
+Epoch[0] Batch [200-300]	Speed: 63.48 samples/sec	loss=6.687657	edit_distance=0.906146
+Epoch[0] Batch [300-400]	Speed: 63.96 samples/sec	loss=6.358641	edit_distance=0.871354
+Epoch[0] Batch [400-500]	Speed: 63.86 samples/sec	loss=6.523305	edit_distance=0.909271
+Epoch[0] Batch [500-600]	Speed: 63.47 samples/sec	loss=6.487675	edit_distance=0.888646
+Epoch[0] Batch [600-700]	Speed: 48.97 samples/sec	loss=6.574096	edit_distance=0.917708
+Epoch[0] Batch [700-800]	Speed: 36.26 samples/sec	loss=6.577108	edit_distance=0.916667
+Epoch[0] Batch [800-900]	Speed: 39.11 samples/sec	loss=6.374459	edit_distance=0.886563
+Epoch[0] Batch [900-1000]	Speed: 40.76 samples/sec	loss=6.986706	edit_distance=0.956354
+Epoch[0] Batch [1000-1100]	Speed: 41.09 samples/sec	loss=6.545233	edit_distance=0.901458
+Epoch[0] Batch [1100-1200]	Speed: 41.29 samples/sec	loss=6.451011	edit_distance=0.895208
+Epoch[0] Batch [1200-1300]	Speed: 41.65 samples/sec	loss=6.365610	edit_distance=0.891563
+Epoch[0] Batch [1300-1400]	Speed: 41.89 samples/sec	loss=6.171985	edit_distance=0.885938
+Epoch[0] Batch [1400-1500]	Speed: 42.39 samples/sec	loss=6.596662	edit_distance=0.930417
+Epoch[0] Batch [1500-1600]	Speed: 42.47 samples/sec	loss=6.233587	edit_distance=0.897604
+Epoch[0] Batch [1600-1700]	Speed: 42.72 samples/sec	loss=6.420606	edit_distance=0.923125
+Epoch[0] Batch [1700-1800]	Speed: 42.82 samples/sec	loss=6.220314	edit_distance=0.887188
+Epoch[0] Batch [1800-1900]	Speed: 42.81 samples/sec	loss=6.191998	edit_distance=0.897396
+Epoch[0] Batch [1900-2000]	Speed: 42.65 samples/sec	loss=6.363676	edit_distance=0.897604
+Epoch[0] Batch [2000-2100]	Speed: 42.55 samples/sec	loss=6.357736	edit_distance=0.905625
+Epoch[0] Batch [2100-2200]	Speed: 42.50 samples/sec	loss=6.341227	edit_distance=0.902604
+Epoch[0] Batch [2200-2300]	Speed: 42.63 samples/sec	loss=6.378974	edit_distance=0.911875
+Epoch[0] Batch [2300-2400]	Speed: 42.67 samples/sec	loss=6.162429	edit_distance=0.880208
+Epoch[0] Batch [2400-2500]	Speed: 42.64 samples/sec	loss=6.090336	edit_distance=0.876458
+Epoch[0] Batch [2500-2600]	Speed: 42.49 samples/sec	loss=6.030445	edit_distance=0.873958
+Epoch[0] Batch [2600-2700]	Speed: 42.56 samples/sec	loss=6.314727	edit_distance=0.906458
+Epoch[0] Batch [2700-2800]	Speed: 42.51 samples/sec	loss=6.088417	edit_distance=0.872708
+Epoch[0] Batch [2800-2900]	Speed: 42.74 samples/sec	loss=6.076944	edit_distance=0.886667
+Epoch[0] Batch [2900-3000]	Speed: 42.86 samples/sec	loss=6.455461	edit_distance=0.924479
+Epoch[0] Batch [3000-3100]	Speed: 42.92 samples/sec	loss=6.307501	edit_distance=0.894896
+Epoch[0] Batch [3100-3200]	Speed: 42.93 samples/sec	loss=6.029550	edit_distance=0.875417
+Epoch[0] Batch [3200-3300]	Speed: 42.87 samples/sec	loss=6.134907	edit_distance=0.882188
+Epoch[0] Train-loss=6.439182
+Epoch[0] Train-edit_distance=0.915250
+Epoch[0] Time cost=7054.274
+Saved checkpoint to "/DATA/disk1/zhaozhiming/code/sliding_cnn/model/chinese-0001.params"
+Epoch[0] Validation-loss=10.610892
+Epoch[0] Validation-edit_distance=1.552083
+Epoch[1] Batch [0-100]	Speed: 43.09 samples/sec	loss=6.228438	edit_distance=0.906559
+Epoch[1] Batch [100-200]	Speed: 43.08 samples/sec	loss=6.406612	edit_distance=0.916458
+Epoch[1] Batch [200-300]	Speed: 43.26 samples/sec	loss=6.259721	edit_distance=0.905104
+Epoch[1] Batch [300-400]	Speed: 43.26 samples/sec	loss=5.980811	edit_distance=0.863437
+Epoch[1] Batch [400-500]	Speed: 43.20 samples/sec	loss=6.105627	edit_distance=0.882396
+Epoch[1] Batch [500-600]	Speed: 42.97 samples/sec	loss=6.111104	edit_distance=0.883437
+Epoch[1] Batch [600-700]	Speed: 42.91 samples/sec	loss=6.116623	edit_distance=0.881458
+Epoch[1] Batch [700-800]	Speed: 42.59 samples/sec	loss=6.134669	edit_distance=0.885417
+Epoch[1] Batch [800-900]	Speed: 42.45 samples/sec	loss=6.227174	edit_distance=0.899167
+Epoch[1] Batch [900-1000]	Speed: 42.66 samples/sec	loss=6.295934	edit_distance=0.896354
+Epoch[1] Batch [1000-1100]	Speed: 42.97 samples/sec	loss=6.381771	edit_distance=0.915521
+Epoch[1] Batch [1100-1200]	Speed: 43.15 samples/sec	loss=6.269682	edit_distance=0.894687
+Epoch[1] Batch [1200-1300]	Speed: 43.13 samples/sec	loss=6.518652	edit_distance=0.932083
+Epoch[1] Batch [1300-1400]	Speed: 43.22 samples/sec	loss=6.377410	edit_distance=0.919167
+Epoch[1] Batch [1400-1500]	Speed: 43.07 samples/sec	loss=6.252011	edit_distance=0.897813
+Epoch[1] Batch [1500-1600]	Speed: 42.88 samples/sec	loss=6.245888	edit_distance=0.904167
+Epoch[1] Batch [1600-1700]	Speed: 42.49 samples/sec	loss=6.407999	edit_distance=0.920625
+Epoch[1] Batch [1700-1800]	Speed: 42.17 samples/sec	loss=6.148461	edit_distance=0.896771
+Epoch[1] Batch [1800-1900]	Speed: 42.08 samples/sec	loss=6.158525	edit_distance=0.907813
+Epoch[1] Batch [1900-2000]	Speed: 42.68 samples/sec	loss=5.913903	edit_distance=0.860625
+Epoch[1] Batch [2000-2100]	Speed: 42.95 samples/sec	loss=6.098799	edit_distance=0.880521
+Epoch[1] Batch [2100-2200]	Speed: 42.82 samples/sec	loss=5.984561	edit_distance=0.863958
+Epoch[1] Batch [2200-2300]	Speed: 42.82 samples/sec	loss=6.019458	edit_distance=0.871458
+Epoch[1] Batch [2300-2400]	Speed: 42.82 samples/sec	loss=5.792250	edit_distance=0.848646

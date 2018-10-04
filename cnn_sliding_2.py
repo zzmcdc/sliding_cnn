@@ -78,7 +78,7 @@ def get_symbol(seq_len, num_label,num_class,true_batch=4):
     net = mx.sym.Activation(data=net, act_type='relu', name='fc2'+'_relu')
     pred = mx.sym.FullyConnected(data=net, num_hidden=num_class)
     
-    pred_ctc = mx.sym.Reshape(data=pred,shape=(seq_len, true_batch,-1))
+    pred_ctc = mx.sym.Reshape(data=pred,shape=(-4,seq_len, -1,0))
 #    net = mx.sym.Activation(data=net, act_type='relu', name='output'+'_relu')
     label = mx.sym.Variable('label')
     label = mx.sym.Cast(data=label,dtype='int32')

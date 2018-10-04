@@ -20,6 +20,7 @@ from cnn_sliding_2 import get_symbol
 from cnn_sliding_dataset import OCRIter
 from config import train_param
 import editdistance
+from ctc_metrics import CtcMetrics
 
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--train_config', required=True,type=str, help='a yaml file for trainning crnn')
@@ -140,7 +141,7 @@ class single_loss_metric(mx.metric.EvalMetric):
     def __init__(self,name='loss'):
         super(single_loss_metric, self).__init__(name)
     def update(self,labels,preds):
-        for pred in preds:
+        for pred in preds[1]:
             self.sum_metric+=pred.asnumpy().sum()
             self.num_inst+=pred.shape[0]
 
@@ -170,7 +171,7 @@ if __name__ == '__main__':
     data_shape = (opt['imgW'], opt['imgH'])
 
 
-    gpu_list=[0,1,2,3]
+    gpu_list=[0,1,2,3,4,5]
     data_train = OCRIter(batch_size = opt['batch_size']*len(gpu_list), classess = classes, dataset_lst = opt['train_lst'])
     data_val   = OCRIter(batch_size = opt['batch_size']*len(gpu_list), classess = classes, dataset_lst = opt['val_lst'])
 
@@ -202,20 +203,20 @@ if __name__ == '__main__':
 
     logger.info('begin fit')
     mon = mx.mon.Monitor(10,norm_stat,pattern=r'.*?warpctc0_output.*?')
+    metrics = CtcMetrics(opt['seq_len'])
     eval_metric = mx.metric.CompositeEvalMetric()
     eval_metric.add(single_loss_metric())
     #eval_metric.add(mx.metric.np(Accuracy))
-    #eval_metric.add(mx.metric.np(edit_distance))
-
+    eval_metric.add(mx.metric.np(edit_distance, allow_extra_outputs=True))
     model.fit(
         train_data=data_train,
         eval_data=data_val,
         eval_metric=eval_metric,
-        batch_end_callback=mx.callback.Speedometer(opt['batch_size']*len(gpu_list), 10),
+        batch_end_callback=mx.callback.Speedometer(opt['batch_size']*len(gpu_list), 100),
         epoch_end_callback=mx.callback.do_checkpoint(prefix, 1),
         #monitor=mon,        
         optimizer='adam',
-        optimizer_params={'learning_rate': opt['learning_rate'], 'rescale_grad':1.0},
+        optimizer_params={'learning_rate': opt['learning_rate'],'clip_gradient':5},
         initializer=mx.init.Xavier(factor_type="in", magnitude=2.4),
         num_epoch=opt['num_epoch'],
         begin_epoch=opt['from_epoch'] if opt['from_epoch'] else 0
